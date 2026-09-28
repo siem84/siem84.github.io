@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>M5Stack Unit C6L — MeshCore UI i MeshCore + Meshtastic DualBoot</title>
+<meta name="description" content="Projekty dla M5Stack Unit C6L: interfejs OLED MeshCore z BLE i RF Monitor oraz DualBoot MeshCore + Meshtastic na jednym urządzeniu.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<link rel="canonical" href="https://siem84.github.io/pl/">
+<link rel="alternate" hreflang="pl" href="https://siem84.github.io/pl/">
+<link rel="alternate" hreflang="en" href="https://siem84.github.io/">
+<link rel="alternate" hreflang="x-default" href="https://siem84.github.io/">
+<meta property="og:type" content="website"><meta property="og:title" content="M5Stack Unit C6L — MeshCore UI i MeshCore + Meshtastic DualBoot">
+<meta property="og:description" content="Projekty dla M5Stack Unit C6L: interfejs OLED MeshCore z BLE i RF Monitor oraz DualBoot MeshCore + Meshtastic na jednym urządzeniu."><meta property="og:url" content="https://siem84.github.io/pl/">
+<meta property="og:image" content="https://siem84.github.io/assets/images/hero.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+</head><body><header><div class="wrap"><nav>
+<a class="logo" href="../">C6L <b>PROJECTS</b></a>
+<div class="navlinks"><a href="#projects">Projekty</a><a href="#how">Jak to działa</a><a href="#faq">FAQ</a><a class="lang" href="../">EN</a></div>
+</nav></div></header>
+<main>
+<section class="hero"><div class="wrap">
+<div class="hero-image"><picture><source srcset="../assets/images/hero.webp" type="image/webp"><img src="../assets/images/hero.png" alt="M5Stack Unit C6L — MeshCore i Meshtastic DualBoot"></picture></div>
+<div class="hero-copy">
+<div><div class="kicker">M5Stack Unit C6L · ESP32-C6 · SX1262</div>
+<h1>MeshCore i Meshtastic dla Unit C6L</h1>
+<p>Dwa praktyczne projekty społecznościowe dla M5Stack Unit C6L: lokalny interfejs OLED dla MeshCore Companion oraz DualBoot pozwalający trzymać MeshCore i Meshtastic na jednym urządzeniu.</p>
+<div class="actions"><a class="btn primary" href="#projects">Zobacz projekty</a><a class="btn" href="https://github.com/siem84">Profil GitHub ↗</a></div></div>
+<div class="quickfacts">
+<div class="fact"><strong>MeshCore C6L UI</strong><span>OLED, informacje BLE, stan radia i RF Monitor.</span></div>
+<div class="fact"><strong>DualBoot</strong><span>Wybór MeshCore lub Meshtastic podczas startu.</span></div>
+<div class="fact"><strong>Unit C6L</strong><span>ESP32-C6 + SX1262 LoRa + wbudowany OLED.</span></div>
+<div class="fact"><strong>Open source</strong><span>Kod, dokumentacja i firmware na GitHubie.</span></div>
+</div></div></div></section>
+
+<section class="section alt" id="projects"><div class="wrap">
+<div class="section-title"><h2>Dwa projekty, dwa różne zadania</h2><p>Wersja UI poprawia lokalną obsługę MeshCore na C6L. DualBoot rozwiązuje inny problem — przełączanie między MeshCore i Meshtastic na tym samym sprzęcie.</p></div>
+<div class="projects">
+<article class="card"><div class="card-media"><picture><source srcset="../assets/images/meshcore-ui.webp" type="image/webp"><img src="../assets/images/meshcore-ui.png" alt="MeshCore M5Stack Unit C6L UI — banner projektu"></picture></div><div class="card-body">
+<div class="tag">Adaptacja MeshCore</div><h3>MeshCore M5Stack Unit C6L UI</h3>
+<p>Adaptacja MeshCore Companion wykorzystująca ekran C6L jako prawdziwy lokalny interfejs. Pokazuje informacje o urządzeniu i radiu, dane parowania BLE oraz odczyty RF Monitor bezpośrednio na module.</p>
+<div class="pills"><span class="pill">OLED UI</span><span class="pill">BLE Companion</span><span class="pill">RF Monitor</span><span class="pill">Zegar</span><span class="pill">SX1262</span></div>
+<div class="actions"><a class="btn primary" href="meshcore-c6l.html">Opis projektu</a><a class="btn" href="https://github.com/siem84/MeshCore-M5Stack-Unit-C6L-UI">GitHub ↗</a></div>
+</div></article>
+<article class="card"><div class="card-media"><picture><source srcset="../assets/images/dualboot.webp" type="image/webp"><img src="../assets/images/dualboot.png" alt="M5Stack Unit C6L MeshCore Meshtastic DualBoot — banner projektu"></picture></div><div class="card-body">
+<div class="tag">Dwa systemy</div><h3>MeshCore + Meshtastic DualBoot</h3>
+<p>MeshCore i Meshtastic znajdują się na jednym Unit C6L, a system wybierasz z menu startowego na OLED. Nie trzeba ponownie wgrywać całego firmware za każdym razem, gdy chcesz się przełączyć.</p>
+<div class="pills"><span class="pill">MeshCore</span><span class="pill">Meshtastic</span><span class="pill">Wybór na OLED</span><span class="pill">Domyślny system</span><span class="pill">Bez reflasha przy zmianie</span></div>
+<div class="actions"><a class="btn green" href="dualboot-c6l.html">Opis projektu</a><a class="btn" href="https://github.com/siem84/M5Stack-Unit-C6L-MeshCore-Meshtastic-DualBoot">GitHub ↗</a></div>
+</div></article>
+</div></div></section>
+
+<section class="section" id="how"><div class="wrap">
+<div class="section-title"><h2>Co dokładnie robią te projekty?</h2><p>Oba wykorzystują Unit C6L, ale odpowiadają na zupełnie inne potrzeby.</p></div>
+<div class="split">
+<div class="panel"><h3>MeshCore C6L UI</h3><p>Urządzenie nadal działa jako MeshCore Companion, ale ekran przestaje być niewykorzystanym dodatkiem. Dostajesz lokalne informacje bez konieczności zaglądania do telefonu.</p>
+<ul><li>status MeshCore i urządzenia na wbudowanym OLED</li><li>lokalne wyświetlanie danych parowania BLE</li><li>RF Monitor z informacjami o sygnale i radiu</li><li>zegar, strefy czasowe i sygnalizacja RGB</li><li>obsługa przygotowana konkretnie dla Unit C6L i SX1262</li></ul></div>
+<div class="panel"><h3>MeshCore + Meshtastic DualBoot</h3><p>DualBoot jest dla osób, które chcą korzystać lub eksperymentować z oboma ekosystemami bez ciągłego podłączania C6L do komputera w celu zmiany firmware.</p>
+<ul><li>MeshCore i Meshtastic zapisane na jednym urządzeniu</li><li>wybór systemu z menu startowego na OLED</li><li>w danym momencie uruchomiony jest jeden system</li><li>zapamiętywanie domyślnego wyboru po restarcie</li><li>łatwe przełączanie urządzenia między dwoma zastosowaniami</li></ul></div>
+</div></div></section>
+
+<section class="section alt"><div class="wrap">
+<div class="section-title"><h2>Który projekt Cię interesuje?</h2><p>Nie są konkurencją — rozwiązują inne problemy.</p></div>
+<table class="compare">
+<tr><th>Jeśli chcesz…</th><th>Projekt</th></tr>
+<tr><td>MeshCore z użytecznymi informacjami bezpośrednio na OLED C6L</td><td><a href="meshcore-c6l.html"><strong>MeshCore C6L UI</strong></a></td></tr>
+<tr><td>RF Monitor i lokalny podgląd stanu MeshCore</td><td><a href="meshcore-c6l.html"><strong>MeshCore C6L UI</strong></a></td></tr>
+<tr><td>MeshCore i Meshtastic na tym samym Unit C6L</td><td><a href="dualboot-c6l.html"><strong>DualBoot</strong></a></td></tr>
+<tr><td>Zmianę systemu bez ponownego flashowania za każdym razem</td><td><a href="dualboot-c6l.html"><strong>DualBoot</strong></a></td></tr>
+</table></div></section>
+
+<section class="section"><div class="wrap"><div class="section-title"><h2>Projekty przygotowane pod konkretny sprzęt</h2></div>
+<p class="seo-copy">M5Stack Unit C6L łączy mikrokontroler ESP32-C6, radio LoRa SX1262 i niewielki wbudowany ekran OLED. Projekty na tej stronie są przygotowane konkretnie dla tej konfiguracji sprzętowej. Nie są ogólnymi paczkami przeznaczonymi dla przypadkowych płytek. Grafiki i ekrany pokazują rzeczywisty Unit C6L oraz interfejsy tych projektów.</p>
+<div class="notice">Niezależne projekty społecznościowe — nie są oficjalnymi wydaniami MeshCore, Meshtastic ani M5Stack. Aktualne pliki, kod źródłowy i instrukcje instalacji znajdują się w repozytoriach GitHub.</div>
+</div></section>
+
+<section class="section alt" id="faq"><div class="wrap"><div class="section-title"><h2>Najczęstsze pytania</h2><p>Krótkie odpowiedzi dla osób szukających MeshCore, Meshtastic i DualBoot dla Unit C6L.</p></div><div class="faq"><details><summary>Czym jest MeshCore C6L UI?</summary><p>To społecznościowa adaptacja MeshCore Companion dla M5Stack Unit C6L. Wykorzystuje wbudowany OLED jako lokalny interfejs i pokazuje m.in. informacje o parowaniu BLE, stanie radia oraz dane RF Monitor.</p></details><details><summary>Co robi projekt MeshCore + Meshtastic DualBoot?</summary><p>Pozwala mieć MeshCore i Meshtastic na jednym M5Stack Unit C6L oraz wybrać system z menu startowego na OLED, bez konieczności każdorazowego ponownego wgrywania firmware.</p></details><details><summary>Czy DualBoot uruchamia MeshCore i Meshtastic jednocześnie?</summary><p>Nie. Oba systemy są zapisane na jednym urządzeniu, ale w danym momencie działa tylko jeden. System wybierasz podczas uruchamiania.</p></details><details><summary>Czy to oficjalne oprogramowanie MeshCore, Meshtastic albo M5Stack?</summary><p>Nie. To niezależne projekty społecznościowe udostępnione w obecnej postaci. Repozytoria zawierają kod źródłowy, instrukcje i informacje techniczne.</p></details><details><summary>Skąd pobrać firmware albo kod źródłowy?</summary><p>Skorzystaj z przycisków GitHub na stronie. Każdy projekt ma link do publicznego repozytorium oraz sekcji Releases.</p></details></div></div></section>
+</main>
+<footer><div class="wrap footerrow"><span>Projekty społecznościowe M5Stack Unit C6L · siem84</span><span><a href="../">English version</a> · <a href="https://github.com/siem84">GitHub</a></span></div></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Czym jest MeshCore C6L UI?", "acceptedAnswer": {"@type": "Answer", "text": "To społecznościowa adaptacja MeshCore Companion dla M5Stack Unit C6L. Wykorzystuje wbudowany OLED jako lokalny interfejs i pokazuje m.in. informacje o parowaniu BLE, stanie radia oraz dane RF Monitor."}}, {"@type": "Question", "name": "Co robi projekt MeshCore + Meshtastic DualBoot?", "acceptedAnswer": {"@type": "Answer", "text": "Pozwala mieć MeshCore i Meshtastic na jednym M5Stack Unit C6L oraz wybrać system z menu startowego na OLED, bez konieczności każdorazowego ponownego wgrywania firmware."}}, {"@type": "Question", "name": "Czy DualBoot uruchamia MeshCore i Meshtastic jednocześnie?", "acceptedAnswer": {"@type": "Answer", "text": "Nie. Oba systemy są zapisane na jednym urządzeniu, ale w danym momencie działa tylko jeden. System wybierasz podczas uruchamiania."}}, {"@type": "Question", "name": "Czy to oficjalne oprogramowanie MeshCore, Meshtastic albo M5Stack?", "acceptedAnswer": {"@type": "Answer", "text": "Nie. To niezależne projekty społecznościowe udostępnione w obecnej postaci. Repozytoria zawierają kod źródłowy, instrukcje i informacje techniczne."}}, {"@type": "Question", "name": "Skąd pobrać firmware albo kod źródłowy?", "acceptedAnswer": {"@type": "Answer", "text": "Skorzystaj z przycisków GitHub na stronie. Każdy projekt ma link do publicznego repozytorium oraz sekcji Releases."}}]}</script>
+</body></html>
